@@ -12,7 +12,7 @@
 burkina_faso <- readRDS(file = paste0(here::here(), "/ElectoralProximity/data/burkina_faso.rds"))
 
 ### The function
-cox_prox <- function(data){
+cox_prox <- function(data, leg_election_year_dummy, leg_election_year_full, pres_election_year_na, pres_election_year_full){
   
   ### Load required packages
   if(!require(tidyverse)){

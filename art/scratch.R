@@ -12,12 +12,12 @@ seq(-3, 3, by = .01) %>%
 
 # Plot 2
 dat <- 
-  seq(from = -10, to = 10, by = 0.025) %>% 
+  seq(from = -10, to = 10, by = 0.02) %>% 
   expand.grid(x = ., y = .)
 
 ggplot(dat, 
        aes(x = (x + pi * sin(y)), 
-           y = (y + pi * sin(x)))) + 
+           y = (y + pi * cos(x)))) + 
   geom_point(inherit.aes = TRUE, 
              alpha = .08, 
              shape = 20, 

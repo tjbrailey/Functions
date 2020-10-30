@@ -11,18 +11,24 @@ seq(-3, 3, by = .01) %>%
   coord_polar()
 
 # Plot 2
-dat <- 
+data <- 
   seq(from = -10, to = 10, by = 0.02) %>% 
   expand.grid(x = ., y = .)
 
-ggplot(dat, 
-       aes(x = (x + pi * sin(y)), 
-           y = (y + pi * cos(x)))) + 
-  geom_point(inherit.aes = TRUE, 
-             alpha = .08, 
-             shape = 20, 
-             size = 0, 
-             color = factor(abs(dat$y))) + 
+ggplot(
+  data,
+  aes(
+    x = (x + pi * sin(y)), 
+    y = (y + pi * cos(x))
+  )
+) + 
+  geom_point(
+    inherit.aes = TRUE, 
+    alpha = .08, 
+    shape = 20, 
+    size = 0, 
+    color = factor(abs(dat$y))
+  ) + 
   theme_void() +
   coord_polar()
 

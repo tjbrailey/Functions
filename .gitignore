@@ -2,3 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+shipping_forecast_map/data/World_EEZ_v11_20191118/eez_v11.shp
+shipping_forecast_map/data/gadm41_GBR_shp/gadm41_GBR_4.shp
+shipping_forecast_map/data/gadm_410-levels/gadm_410-levels.gpkg
+shipping_forecast_map/data/gadm_410-levels/gadm_410-levels.gpkg
